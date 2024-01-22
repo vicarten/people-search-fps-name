@@ -10,17 +10,11 @@
 
 #(B) Import libraries
 
-from selenium import webdriver
-import chromedriver_autoinstaller 
 import pandas as pd
-import openpyxl as xls
 import time
 import undetected_chromedriver as uc
 from openpyxl import load_workbook
-from webdriver_manager.chrome import ChromeDriverManager
-from selenium.webdriver.chrome.options import Options
 from selenium.webdriver.common.by import By
-from selenium.webdriver.common.keys import Keys
 from selenium.webdriver.support import expected_conditions as EC
 from selenium.webdriver.support.ui import WebDriverWait as wait
 from selenium.webdriver.common.action_chains import ActionChains
