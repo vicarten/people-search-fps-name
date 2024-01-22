@@ -1,4 +1,14 @@
-#(A) Import libraries
+#(A) Install packages
+'''
+!pip install selenium
+!pip install undetected-chromedriver
+!pip install webdriver-manager
+!pip install pandas
+!pip install chromedriver-autoinstaller
+!pip install openpyxl
+'''
+
+#(B) Import libraries
 
 from selenium import webdriver
 import chromedriver_autoinstaller 
@@ -18,19 +28,19 @@ from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 #_________________________________________________________________________________________________________________________________________________________
 
-#(B) Read excel file
+#(C) Read excel file
 
 fps = pd.read_excel("test.xlsx")
 num_link = len(fps)
 fps
 #_________________________________________________________________________________________________________________________________________________________
 
-#(C) Create a data frame
+#(D) Create a data frame
 
 data_frame = pd.DataFrame(columns = ['row id', 'owner','provided', 'name', 'aka', 'age', 'address', 'past address', 'current address property details', 'primary phone', 'other phone numbers', 'emails', 'link', 'tbc'])
 #_________________________________________________________________________________________________________________________________________________________
 
-#(D) Define functions
+#(E) Define functions
 
 #prepare address string for comparison
 def edit(address):
@@ -106,7 +116,7 @@ def info():
     return name, aka, age, phone, phone_numbers, email, all_details
 #_________________________________________________________________________________________________________________________________________________________
 
-#(E) Set chrome options
+#(F) Set chrome options
 
 options = uc.ChromeOptions()
 
@@ -119,13 +129,13 @@ driver = uc.Chrome(options=options)
 driver.maximize_window()
 #_________________________________________________________________________________________________________________________________________________________
 
-#(F) Set the search range
+#(G) Set the search range
 
 start = 0 #start line
 num_link = 100 #end line
 #_________________________________________________________________________________________________________________________________________________________
 
-#(G) Iterate over each row in the range from 'test.xlsx'
+#(H) Iterate over each row in the range from 'test.xlsx'
 
 for row in range(start, num_link): 
     print(row)
@@ -237,12 +247,12 @@ for row in range(start, num_link):
     print("__________________" + str(row) + " complete")
 #_________________________________________________________________________________________________________________________________________________________
     
-#(H) Display the first and last five search results
+#(I) Display the first and last five search results
 
 display(data_frame)
 #_________________________________________________________________________________________________________________________________________________________
 
-#(I) Export to 'output.xlsx' file
+#(J) Export to 'output.xlsx' file
 
 #define the row highlighting function
 def highlight_row(row):
