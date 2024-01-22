@@ -1,15 +1,4 @@
-#(A) Install packages
-'''
-!pip install selenium
-!pip install undetected-chromedriver
-!pip install webdriver-manager
-!pip install pandas
-!pip install chromedriver-autoinstaller
-!pip install openpyxl
-'''
-#_________________________________________________________________________________________________________________________________________________________
-
-#(B) Import libraries
+#(A) Import libraries
 
 from selenium import webdriver
 import chromedriver_autoinstaller 
@@ -29,19 +18,19 @@ from selenium.common.exceptions import TimeoutException
 from selenium.common.exceptions import NoSuchElementException
 #_________________________________________________________________________________________________________________________________________________________
 
-#(C) Read excel file
+#(B) Read excel file
 
 fps = pd.read_excel("test.xlsx")
 num_link = len(fps)
 fps
 #_________________________________________________________________________________________________________________________________________________________
 
-#(D) Create a data frame
+#(C) Create a data frame
 
 data_frame = pd.DataFrame(columns = ['row id', 'owner','provided', 'name', 'aka', 'age', 'address', 'past address', 'current address property details', 'primary phone', 'other phone numbers', 'emails', 'link', 'tbc'])
 #_________________________________________________________________________________________________________________________________________________________
 
-#(E) Define functions
+#(D) Define functions
 
 #prepare address string for comparison
 def edit(address):
@@ -117,13 +106,12 @@ def info():
     return name, aka, age, phone, phone_numbers, email, all_details
 #_________________________________________________________________________________________________________________________________________________________
 
-#(F) Set chrome options
+#(E) Set chrome options
 
 options = uc.ChromeOptions()
 
 prefs = {"credentials_enable_service": False,"profile.password_manager_enabled": False}
 options.add_experimental_option("prefs", prefs)
-options.add_argument('--blink-settings=imagesEnabled=false')
 options.add_argument("--disable-notifications")
 options.add_argument("--disable-popup-blocking") 
 
@@ -131,13 +119,13 @@ driver = uc.Chrome(options=options)
 driver.maximize_window()
 #_________________________________________________________________________________________________________________________________________________________
 
-#(G) Set the search range
+#(F) Set the search range
 
 start = 0 #start line
 num_link = 100 #end line
 #_________________________________________________________________________________________________________________________________________________________
 
-#(H) Iterate over each row in the range from 'test.xlsx'
+#(G) Iterate over each row in the range from 'test.xlsx'
 
 for row in range(start, num_link): 
     print(row)
@@ -249,12 +237,12 @@ for row in range(start, num_link):
     print("__________________" + str(row) + " complete")
 #_________________________________________________________________________________________________________________________________________________________
     
-#(I) Display the first and last five search results
+#(H) Display the first and last five search results
 
 display(data_frame)
 #_________________________________________________________________________________________________________________________________________________________
 
-#(J) Export to 'output.xlsx' file
+#(I) Export to 'output.xlsx' file
 
 #define the row highlighting function
 def highlight_row(row):
