@@ -18,3 +18,16 @@ Use the package manager [pip](https://pip.pypa.io/en/stable/) to install package
 !pip install chromedriver-autoinstaller
 !pip install openpyxl
 ```
+## Usage
+
+Explain how to use your project, and include examples if applicable.
+
+## Configuration
+
+If your project requires configuration, explain how users can set it up.
+
+## Credits
+
+Acknowledge and give credit to any resources, libraries, or contributors.
+
+## Contact
