@@ -32,7 +32,6 @@ The objective of this project is to efficiently search and retrieve information 
 
 
 
-
 ## Credits
 
 

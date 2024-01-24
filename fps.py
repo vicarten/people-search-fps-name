@@ -24,7 +24,7 @@ from selenium.common.exceptions import NoSuchElementException
 
 #(C) Read excel file
 
-fps = pd.read_excel("test.xlsx")
+fps = pd.read_excel("input.xlsx")
 num_link = len(fps)
 fps
 #_________________________________________________________________________________________________________________________________________________________
