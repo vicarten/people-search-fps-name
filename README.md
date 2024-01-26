@@ -1,5 +1,5 @@
 
-# Search based by 
+# Search by Name (web scraping)
 
 The objective of this project is to efficiently search and retrieve information (phone numbers, emails, previous adresses) on a large number of people using web scraping on [Fastpeoplesearch.com](https://www.fastpeoplesearch.com/).
 
