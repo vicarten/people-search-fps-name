@@ -5,7 +5,6 @@
 !pip install webdriver-manager
 !pip install pandas
 !pip install chromedriver-autoinstaller
-!pip install openpyxl
 '''
 
 #(B) Import libraries

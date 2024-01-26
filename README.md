@@ -1,5 +1,7 @@
-# people-search-fps-name
-The objective of this project is to efficiently search and retrieve information on a large number of people using web scraping on Fastpeoplesearch.com.
+
+# Search based by 
+
+The objective of this project is to efficiently search and retrieve information (phone numbers, emails, previous adresses) on a large number of people using web scraping on [Fastpeoplesearch.com](https://www.fastpeoplesearch.com/).
 
 ## Requirements
 
@@ -24,20 +26,51 @@ The objective of this project is to efficiently search and retrieve information 
 !pip install webdriver-manager
 !pip install pandas
 !pip install chromedriver-autoinstaller
-!pip install openpyxl
 ```
 ## How to Use the Project
 
+### Step 1: Prepare "input.xlsx" File:
 
+- Open the `input.xlsx` file.
+- Enter names, street addresses, and zip codes in Columns A, B, and C, respectively.
+- Drag the fill handle down in Column D to apply the formula to all rows.
+- Save changes made to `input.xlsx` and close the file.
 
+### Step 2: Install the Project in Jupyter Notebook:
 
+- Ensure the project is installed in your Jupyter Notebook environment.
 
-## Credits
+- Execute the code in cells B to F in your Jupyter Notebook.
+Specify Search Range (Section G):
 
+- Update the start and end lines in Section G based on your requirements.
 
+- Execute cells G and H to initiate web scraping.
 
-## Contact
+    ***Error Handling:***
+
+    - If the code crashes, replace the start line number with the last number printed in cell H and rerun cells G and H.
+
+    ***Handling Captcha:***
+
+    - If a captcha appears, wait for 30 seconds before the search resumes.
+    - Solve the captcha to continue web scraping.
+
+    ***Reopen Browser (if needed):***
+
+    - If required, reopen the browser by running cells F to H.
+
+### Step 3: Save the results in "output.xlsx"
+
+- Once cell H completes running, proceed to execute cells I and J.
+These adjustments should enhance the overall clarity and flow of the instructions.
 
 ## License
 
-[MIT](https://choosealicense.com/licenses/mit/)
+Distributed under the [MIT License](https://choosealicense.com/licenses/mit/).
+
+## Contact
+
+Victoria Ten - victoria.ten.work@gmail.com
+
+## Acknowledgments
