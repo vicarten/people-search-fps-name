@@ -7,18 +7,19 @@ The objective of this project is to efficiently search and retrieve information 
 
 - [Jupyter Notebook](https://jupyter.org/)
 - [Python 3](https://www.python.org/)
+- [Chrome](https://www.google.com/chrome/?brand=WDIF&ds_kid=43700078347700321&gclid=CjwKCAiAzc2tBhA6EiwArv-i6S09bM7LhhgfwroA4lCJRVVV0mykZ5vFpMPxV6WF1fgD7_zVSOEWkBoCxYMQAvD_BwE&gclsrc=aw.ds) (last update)
 
 ## How to Install and Run the Project
 
 ### Step 1: Open or Copy Files
 
 - Open `fast-people-search.ipynb` in Jupyter Notebook.
-- Alternatively, copy each code section (A-J) from `fps.py` to cells in Jupyter Notebook, using `fast-people-search.ipynb` as a reference.
+- Alternatively, copy each code section (**A-J**) from `fps.py` to cells in Jupyter Notebook, using `fast-people-search.ipynb` as a reference.
 
 ### Step 2: Install Packages
 
-- Uncomment Section A in the notebook.
-- Run Section A to install the required packages using the package manager [pip](https://pip.pypa.io/en/stable/).
+- Uncomment Section **A** in the notebook.
+- Run Section **A** to install the required packages using the package manager [pip](https://pip.pypa.io/en/stable/).
 
 ```bash
 !pip install selenium
@@ -40,16 +41,16 @@ The objective of this project is to efficiently search and retrieve information 
 
 - Ensure the project is installed in your Jupyter Notebook environment.
 
-- Execute the code in cells B to F in your Jupyter Notebook.
-Specify Search Range (Section G):
+- Execute the code in cells **B** to **F** in your Jupyter Notebook.
+Specify Search Range (Section **G**):
 
-- Update the start and end lines in Section G based on your requirements.
+- Update the start and end lines in Section **G** based on your requirements.
 
-- Execute cells G and H to initiate web scraping.
+- Execute cells **G** and **H** to initiate web scraping.
 
     ***Error Handling:***
 
-    - If the code crashes, replace the start line number with the last number printed in cell H and rerun cells G and H.
+    - If the code crashes, replace the start line number with the last number printed in cell **H** and rerun cells **G** and **H**.
 
     ***Handling Captcha:***
 
@@ -58,11 +59,11 @@ Specify Search Range (Section G):
 
     ***Reopen Browser (if needed):***
 
-    - If required, reopen the browser by running cells F to H.
+    - If required, reopen the browser by running cells **F** to **H**.
 
 ### Step 3: Save the results in "output.xlsx"
 
-- Once cell H completes running, proceed to execute cells I and J.
+- Once cell **H** completes running, proceed to execute cells **I** and **J**.
 These adjustments should enhance the overall clarity and flow of the instructions.
 
 ## License
@@ -72,5 +73,3 @@ Distributed under the [MIT License](https://choosealicense.com/licenses/mit/).
 ## Contact
 
 Victoria Ten - victoria.ten.work@gmail.com
-
-## Acknowledgments
