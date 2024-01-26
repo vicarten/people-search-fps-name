@@ -14,11 +14,13 @@ The objective of this project is to efficiently search and retrieve information 
 ### Step 1: Open or Copy Files
 
 - Open `fast-people-search.ipynb` in Jupyter Notebook.
+
 - Alternatively, copy each code section (**A-J**) from `fps.py` to cells in Jupyter Notebook, using `fast-people-search.ipynb` as a reference.
 
 ### Step 2: Install Packages
 
 - Uncomment Section **A** in the notebook.
+
 - Run Section **A** to install the required packages using the package manager [pip](https://pip.pypa.io/en/stable/).
 
 ```bash
@@ -31,10 +33,14 @@ The objective of this project is to efficiently search and retrieve information 
 ## How to Use the Project
 
 ### Step 1: Prepare "input.xlsx" File:
+- Download the input.xlsx file to the same folder as the project file with code.
 
 - Open the `input.xlsx` file.
+
 - Enter names, street addresses, and zip codes in Columns A, B, and C, respectively.
+
 - Drag the fill handle down in Column D to apply the formula to all rows.
+
 - Save changes made to `input.xlsx` and close the file.
 
 ### Step 2: Install the Project in Jupyter Notebook:
@@ -42,7 +48,6 @@ The objective of this project is to efficiently search and retrieve information 
 - Ensure the project is installed in your Jupyter Notebook environment.
 
 - Execute the code in cells **B** to **F** in your Jupyter Notebook.
-Specify Search Range (Section **G**):
 
 - Update the start and end lines in Section **G** based on your requirements.
 
@@ -55,6 +60,7 @@ Specify Search Range (Section **G**):
     ***Handling Captcha:***
 
     - If a captcha appears, wait for 30 seconds before the search resumes.
+
     - Solve the captcha to continue web scraping.
 
     ***Reopen Browser (if needed):***
@@ -64,7 +70,8 @@ Specify Search Range (Section **G**):
 ### Step 3: Save the results in "output.xlsx"
 
 - Once cell **H** completes running, proceed to execute cells **I** and **J**.
-These adjustments should enhance the overall clarity and flow of the instructions.
+
+- Open `output.xlsx` to see the results.
 
 ## License
 
